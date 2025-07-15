@@ -1,1 +1,1 @@
-# News-Fusion
+# NewsFusion
