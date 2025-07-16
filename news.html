@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News Fusion</title>
+  <link rel="icon" type="image/svg+xml" href="assets/R_Letter.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="news.css" />
+  <script src="news.js" defer></script>
+</head>
+
+<body>
+  <header class="header-nav">
+    <h1 class="site-title">NewsFusion</h1>
+    <nav id="nav" class="nav">
+      <div id="nav-buttons" class="nav-buttons">
+        <button onclick="onNavItemClick('politics')">Politics</button>
+        <button onclick="onNavItemClick('finance')">Finance</button>
+        <button onclick="onNavItemClick('science')">Science</button>
+        <button onclick="onNavItemClick('sports')">Sports</button>
+        <button id="Global">Global</button>
+        <button id="notes-tab">Notes</button>
+      </div>
+      <div class="search-bar">
+        <input id="search-text" type="search" placeholder="Search news..." class="input" />
+        <button id="search-button" class="search-button">Search</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="cards-container container flex" id="cards-container"></div>
+  </main>
+
+  <section id="notes-section" style="display: none;">
+    <h2>My Notes</h2>
+
+    <div id="notes-input-wrapper">
+      <textarea id="note-input" rows="5" placeholder="Write your note here..."></textarea><br />
+      <button onclick="saveNote()">Save Note</button>
+    </div>
+
+    <h3>Saved Notes:</h3>
+    <ul id="notes-list"></ul>
+  </section>
+
+  <template id="template-news-card">
+    <div class="card">
+      <div class="card-header">
+        <img src="" alt="news" id="news-img" />
+      </div>
+      <div class="card-content">
+        <h3 id="news-title">Title</h3>
+        <h6 class="news-source" id="news-source">Source • Date</h6>
+        <p class="news-desc">Description</p>
+      </div>
+    </div>
+  </template>
+
+  <footer id="footer-display">
+    <p>&copy; 2025 NewsFusion</p>
+  </footer>
+</body>
+
+</html>
