@@ -161,7 +161,7 @@ searchButton.addEventListener('click', () => {
     if (!query) return;
     fetchNews1(query);
     document.getElementById("notes-section").style.display = "none";
-    document.getElementById("cards-container").style.display = "flex";
+    document.getElementById("cards-container").style.display = "grid";
     curSelectedNav?.classList.remove("active");
     curSelectedNav = null;
 });
