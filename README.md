@@ -23,7 +23,7 @@
 
 **Search Bar** for keyword-specific news
  
-    Clean, card-based layout (3 articles per row)
+**Clean, card-based layout** - 3 articles per row
 
 # Tech Stack
 
